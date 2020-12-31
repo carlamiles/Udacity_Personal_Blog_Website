@@ -7,15 +7,17 @@
     grid-auto-rows: minmax(200px, auto);
     grid-template-areas: 
     "hd hd hd hd hd hd"
-    "sd main main main main main"
+    "sd sd main main main main"
     "ft ft ft ft ft ft";
     
 }
 .header{
     grid-area:hd;
+    margin-top: 30px;
 }
 .header h1{
     text-align: center;
+    margin-top: 40px;
 }
 .sidebar{
     grid-area:sd;
@@ -51,11 +53,18 @@ a:link{
 a:visited{
     color: black;
 }
+a:hover{
+    text-decoration: underline;
+}
 .postBox{
     object-fit: contain;
     
 }
-
+.postBox img{
+    width: 425px;
+    max-height: 450px;
+    
+}
 @media(max-width: 320px){
     .container{
         display:grid;
